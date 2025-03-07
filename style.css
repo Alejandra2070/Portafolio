@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(90deg, #2b064d 0%, #3d0b60 50%, #2b064d 100%);
+}
+
+#menu{
+    display: flex;
+    align-items: center;
+    background-color: #572975;
+    width: 100%;
+    height: 8vh;
+    justify-content: space-between;
+    font-size: 1.3vw;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
