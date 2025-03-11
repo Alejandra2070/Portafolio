@@ -29,7 +29,6 @@ body{
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
     z-index: 1;
-    /*box-shadow: 0 0 10px 5px #9c3799;*/
     margin-left: 1vw;
     margin-top: 1vw;
 }
@@ -46,21 +45,43 @@ a{
     color: black;
 }
 #inicio{
-    flex-direction: column;
     color: white;
     font-family: letra;
-    width: 50%;
+    width: 60%;
     height: 73vh;
-    margin-left: 24vw;
+    margin-left: 42vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 10vw;
-    overflow: hidden;
+    padding-top: 7vw;
+    gap: 4vw;
 }
-
+#inicio p{
+    width: 45vw;
+    position: relative;
+    top: 7vw;
+    left: -27vw;
+    font-size: 1.5vw;
+    display: flex;
+    color: #514354;
+}
+#hi a{
+    display: flex;
+    justify-content: center;
+    width: 8vw;
+    height: 3vw;
+    background-color: #baa7bf;
+    border-radius: 1vw;
+    margin-left: -20vw;
+    margin-top: 8vw;
+    color: #514354;
+    box-shadow: 0 0 10px 5px #baa7bf;
+}
+#hi a:hover{
+    box-shadow: 0 0 10px 5px #86728b;
+}
 #imag{
-    width: 20vw;
+    width: 16vw;
     box-shadow: 0 0 10px 5px #86728b;
     border-radius: 10%;
 }
@@ -68,11 +89,12 @@ a{
     display: none;
 }
 #b{
-    font-size: 4.8vw;
+    font-size: 4vw;
     white-space: nowrap;
-    overflow: hidden;
     color: #514354;
     font-family: letra2;
+    display: flex;
+    margin-top: -8vw;
 }
 #b span{
     display: inline-block;
@@ -120,7 +142,7 @@ h1{
     width: 45vw;
     height: 30vw;
     display: flex;
-    font-size: 2vw;
+    font-size: 1.5vw;
     justify-content: center;
     text-align: center;
     flex-direction: column;
