@@ -181,9 +181,97 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4vw;
+    transition: 0.3s;
+    gap: 16px;
+    width: 100%;
+    height: 100vh;
+    margin-top: -10vw;
 }
-#hab1, #hab2, #hab3{
+#habs li{
+    position: relative;
+    overflow: hidden;
+    flex: 0 0 80px;
+    cursor: pointer;
+    border: 1px solid black;
+    width: 100%;
+    height: 20vw;
+}
+#habs li img{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+}
+#habs li, #habs li img{
+    transition: 0.3s;
+}
+#habs li #hab1{
+    transition: 1.5s ease;
+}
+#habs span{
+    text-align: center;
+    width: 75%;
+}
+#habs h2{
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 4px;
+    margin-bottom: 3px;
+    white-space: nowrap;
+    color: black;
+}
+#habs p{
+    margin-top: 1vw;
+    color: black;
+    font-size: 1vw;
+    width: 100%;
+}
+#habs li #hab1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    color: black;
+    padding: 15px;
+    background: linear-gradient(0deg, rgb(0 0 0 / 70%) 10%, rgb(255 255 / 0%) 100%);
+    opacity: 0;
+    visibility: hidden;
+}
+#habs:hover{
+    gap: 2;
+}
+#hab1 span{
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    bottom: 0px;
+    translate: -50%;
+    scale: 0.85;
+    visibility: hidden;
+    opacity: 0;
+}
+#habs li:hover{
+    flex: 0 1 360px;
+    scale: 1.1;
+    z-index: 10;
+    opacity: 1;
+}
+#habs li:hover #hab1{
+    opacity: 1;
+    visibility: visible;
+}
+#habs li:hover div span{
+    scale: 1;
+    opacity: 1;
+    visibility: visible;
+    color: black;
+}
+/*#hab1, #hab2, #hab3{
     display: flex;
     align-items: center;
     text-align: center;
@@ -271,7 +359,7 @@ h1{
     padding: 20px;
     box-sizing: border-box;
     border-radius: 2vw;
-}
+}*/
 #img2{
     width: 8vw;
     margin-top: 3vw;
