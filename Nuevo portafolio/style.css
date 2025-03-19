@@ -248,7 +248,7 @@ a{
     height: 10vw;
     background-color: #a5a5a5;
 }
-#hab9:hover{
+#hab9 img:hover{
     transition: 0.3s ease;
     width: 10vw;
     height: 10vw;
