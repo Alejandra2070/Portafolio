@@ -14,6 +14,9 @@
         <a href="#about">
             <img id="img" src="/images/usuario.png" alt=""> Sobre mí
         </a>
+        <a href="#lenguajes">
+            <img id="img" src="/images/habilidad.png" alt=""> Lenguajes
+        </a>
         <a href="#habilidades">
             <img id="img" src="/images/habilidad.png" alt=""> Habilidades
         </a>
@@ -21,12 +24,11 @@
             <img id="img" src="/images/software.png" alt=""> Proyectos
         </a>
         <a href="#contacto">
-            <img id="img" src="/images/contacto.png" alt=""> Contáctame
+            <img id="img" src="/images/contacto.png" alt=""> Contacto
         </a>
     </div>
     <div id="inicio">
         <div id="inicio2">
-            <input type="button" onclick="document.body.style.background='#8ea48b'" />
             <img id="imag" src="/images/WhatsApp_Image_2025-03-11_at_9.53.59_AM-removebg-preview.png" alt=""><br>
             <br>
             <div id="hi">
@@ -39,11 +41,11 @@
             </div>
         </div>
     </div>
-    <div id="botones">
-        <button id="color" style="background-color: #828282;"></button>
-        <button id="color" style="background-color: #8ea48b;"></button>
-        <button id="color" style="background-color: #d1b7a1;"></button>
-        <button id="color" style="background-color: #cbacd4;"></button>
+    <div class="colores">
+        <div class="color1" onclick="color1()"></div>
+        <div class="color2" onclick="color2()"></div>
+        <div class="color3" onclick="color3()"></div>
+        <div class="color4" onclick="color4()"></div>
       </div>
     </div>
     <div id="about">
@@ -60,44 +62,73 @@
             <img id="me" src="/images/itsme-removebg-preview.png" alt="">
         </div>
     </div>
-    <div id="habilidades">
-        <div id="habilidades2">
+    <div id="lenguajes">
+        <div id="lenguajes2">
             <div id="mis">
                 <p>Lenguajes</p>
             </div>
-            <div id="habs">
-                <div id="hab1">
+            <div id="lengs">
+                <div id="leng1">
                     <img id="img1" src="/images/html.png" alt="">
                     <p>HTML5</p>
                 </div>
-                <div id="hab2">
+                <div id="leng2">
                     <br>
                     <img id="img2" src="/images/css.png" alt="">
                     <p>CSS3</p>
                 </div>
-                <div id="hab3">
+                <div id="leng3">
                     <img id="img3" src="/images/javascript.png" alt="">
                     <p>JAVASCRIPT</p>
                 </div>
-                <div id="hab4">
+                <div id="leng4">
                     <img id="img4" src="/images/mysql.png" alt="">
                     <p>MySQL</p>
                 </div>
-                <div id="hab5">
+                <div id="leng5">
                     <img id="img5" src="/images/postgresql.png" alt="">
                     <p>MySQL</p>
                 </div>
-                <div id="hab6">
+                <div id="leng6">
                     <img id="img6" src="/images/java.png" alt="">
                     <p>Java</p>
                 </div>
-                <div id="hab7">
+                <div id="leng7">
                     <img id="img7" src="/images/springboot.png" alt="">
                     <p>Spring Boot</p>
                 </div>
-                <div id="hab8">
+                <div id="leng8">
                     <img id="img8" src="/images/python.png" alt="">
                     <p>Python</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="habilidades">
+        <div id="habilidades2">
+            <div id="mis">
+                <p>Habilidades</p>
+            </div>
+            <div id="habs">
+                <div id="hab1">
+                    <p>Trabajo en equipo</p>
+                    <img id="images1" src="/images/trabajo-equipo.png" alt="">
+                </div>
+                <div id="hab2">
+                    <p>Aprendizaje continuo</p>
+                    <img id="images2" src="/images/aprendizaje-continuo.png" alt="">
+                </div>
+                <div id="hab3">
+                    <p>Comunicación</p>
+                    <img id="images3" src="/images/buena-comunicacion.png" alt="">
+                </div>
+                <div id="hab4">
+                    <p>Adaptabilidad</p>
+                    <img id="images4" src="/images/adaptacion.png" alt="">
+                </div>
+                <div id="hab5">
+                    <p>Resolución de problemas</p>
+                    <img id="images5" src="/images/resolucion.png" alt="">
                 </div>
             </div>
         </div>
@@ -141,36 +172,36 @@
     <div id="contacto">
         <div id="contacto2">
             <div id="mis">
-                <p id="mis">Contacto</p>
+                <p id="mis">Puedes contáctarme en:</p>
             </div>
-            <form name="contact" netlify>
+            <form id="form" name="contact" netlify>
                 <p>
-                  <label>Name <input type="text" name="name" /></label>
+                  <label id="font">Nombre <input id="inp" type="text" name="name" /></label>
                 </p>
                 <p>
-                  <label>Email <input type="email" name="email" /></label>
+                  <label id="font">Correo <input id="inp" type="email" name="email" /></label>
                 </p>
                 <p>
-                  <label>Mensaje: <textarea name="message"></textarea></label>
+                  <label id="font">Mensaje: <textarea placeholder="Escribe a mi correo..." id="inp2" name="message"></textarea></label>
                 </p>
                 <p>
-                  <button type="submit">Enviar</button>
+                  <button id="fontB" type="submit">Enviar</button>
                 </p>
-              </form>
-            <!--<div id="conts">
+            </form>
+            <div id="conts">
                 <div id="git">
-                    <img id="imgs" src="https://user-images.githubusercontent.com/74038190/212257468-1e9a91f1-b626-4baa-b15d-5c385dfa7ed2.gif" alt="">
+                    <img id="imgs" src="https://user-images.githubusercontent.com/74038190/212257468-1e9a91f1-b626-4baa-b15d-5c385dfa7ed2.gif" alt=""><br>
                     <a href="https://github.com/Alejandra2070">GitHub</a>
                 </div>
                 <div id="link">
-                    <img id="imgs" src="https://user-images.githubusercontent.com/74038190/235294012-0a55e343-37ad-4b0f-924f-c8431d9d2483.gif" alt="">
+                    <img id="imgs" src="https://user-images.githubusercontent.com/74038190/235294012-0a55e343-37ad-4b0f-924f-c8431d9d2483.gif" alt=""><br>
                     <a href="https://www.linkedin.com/in/alejandra-machuca-300553353">LinkedIn</a>
                 </div>
                 <div id="ins">
-                    <img id="imgs" src="https://user-images.githubusercontent.com/74038190/235294013-a33e5c43-a01c-43f6-b44d-a406d8b4ab75.gif" alt="">
+                    <img id="imgs" src="https://user-images.githubusercontent.com/74038190/235294013-a33e5c43-a01c-43f6-b44d-a406d8b4ab75.gif" alt=""><br>
                     <a href="https://www.instagram.com/mh_alejandra_?igsh=cHYxYTE4eTY5d3dy">Instagram</a>
                 </div>
-            </div>-->
+            </div>
         </div>
     </div>
     <div id="footer">
@@ -179,4 +210,5 @@
         <p>Alejandra Machuca - CampusLands</p>
     </div>
 </body>
+<script src="script.js"></script>
 </html>
